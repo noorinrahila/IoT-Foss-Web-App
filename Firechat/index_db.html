@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Firebase Web Basics</title>
+
+	<link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,700" rel="stylesheet">
+
+	<script src="https://use.fontawesome.com/939e9dd52c.js"></script>
+
+	
+	<style>
+	body {
+	background: #21252b;
+	color: #333;
+	font-size: 14px;
+	font-family: 'Raleway', sans-serif;
+	padding: 0;
+	maring: 0;
+}
+
+* {
+	box-sizing: border-box;
+	font-family: 'Raleway', sans-serif;
+	margin: 0;
+	font-size: 16px;
+	outline: none;
+}
+
+input, button {
+	border: 0;
+	padding: 10px;
+}
+
+.mainDiv {
+	background: #fff;
+	padding: 20px;
+	width: 450px;
+	margin: 0px auto;
+	margin-top: 200px;
+	box-shadow: 0 0 20px #333;
+}
+
+h1 {
+	font-weight: 300;
+	font-size: 24px;
+}
+table {
+    width:100%;
+}
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 5px;
+    text-align: left;
+}
+table#t01 tr:nth-child(even) {
+    background-color: #eee;
+}
+table#t01 tr:nth-child(odd) {
+   background-color:#fff;
+}
+table#t01 th {
+    background-color: black;
+    color: white;
+}
+</style>
+</head>
+<body>
+
+	<div class="mainDiv" align="right">
+		<h1 align="left">View message</h1>
+	<table style="width:100%">
+  <thead>
+  <tr>
+    <th>Message</th>
+    <th>Action</th> 
+    
+  </tr>
+  </thead>
+  <tbody id="table_body">
+  
+  </tbody >
+ 
+  
+</table>
+				
+	</div>
+    <div>
+        
+        <a href="http://localhost/Foss/index.php" style="width:100px;color: white; height:60px; margin-top: 3900px;margin-bottom: 20px;margin-left: 800px;margin-bottom: 70px;text-decoration: none;" > Go back</a>
+    </div>
+	
+<script src="https://www.gstatic.com/firebasejs/3.9.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyDE8NbZwyHCBwqhB5EnkTNYX-eIGGfghFA",
+    authDomain: "webapp-chat-c2db9.firebaseapp.com",
+    databaseURL: "https://webapp-chat-c2db9.firebaseio.com",
+    projectId: "webapp-chat-c2db9",
+    storageBucket: "webapp-chat-c2db9.appspot.com",
+    messagingSenderId: "35045028644"
+  };
+  firebase.initializeApp(config);
+</script>
+<script src ="https://code.jquery.com/jquery-3.1.0.js"></script>
+	
+
+<script src="index_db.js">
+   
+</script>
+
+</body>
+</html>
